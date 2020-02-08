@@ -45,6 +45,10 @@ location to the shell's search path.
 PATH=<TEXTTOOLS_DIR>:$PATH
 ```
 
+It is important to *not* insert any whitespace around the assignment operator
+`=`.  This is a syntax rule of the shell; any extra whitespace is regarded as
+an error.
+
 If the path to `tt.py` reported by `pwd` contains spaces (e.g. because your
 Windows username contains spaces), you'll need to "escape" them by adding a
 single backslash `\` in front of each one.
@@ -58,6 +62,11 @@ single backslash `\` in front of each one.
     found" error.
 
 
+
+### MacOS and Zsh users
+
+If your primary shell is Zsh, follow the above procedure but instead make
+changes to the file `~/.zshrc`.  Open a new terminal to observe the change.
 
 
 ## Troubleshooting
