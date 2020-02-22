@@ -101,6 +101,7 @@ directory, each of which contains three files.
 *   `output.txt`
     The correct output for this given data set
 
+
 Unlike other assignments, this program's output must *exactly* match that of
 the provided examples down to the smallest detail.  Except for the final
 `print(rpt)` line provided in the starter code, your final submission *must
