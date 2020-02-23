@@ -5,3 +5,6 @@
 
 ## February 19th, 2020
 ### Began implementation.
+
+## February 21st, 2020
+### Validated code and cleaned up output

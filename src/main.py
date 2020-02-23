@@ -17,7 +17,10 @@ f = open(sys.argv[1] + "/area_titles.csv", "r")
 d = {}
 for line in f:
 	l = line.split(',')
-	d[l[0]] = l[1]
+	if len(l) >= 3:
+		d[l[0]] = l[1] + ',' + l[2][:-1]
+	else:
+		d[l[0]] = l[1]
 f.close()
 
 f = open(sys.argv[1] + "/2018.annual.singlefile.csv", 'r')
@@ -73,7 +76,7 @@ for line in f:
 				soft_max_empl[1] = int(l[9].strip('"'))
 
 after = time.time()
-print(f"Done in {after - before:.3f} seconds!", file=sys.stderr)
+#print(f"Done in {after - before:.3f} seconds!", file=sys.stderr)
 
 
 

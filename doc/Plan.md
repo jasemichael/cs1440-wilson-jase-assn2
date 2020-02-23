@@ -181,9 +181,9 @@ All other industry codes are excluded from the report.
 Essentially, use the tools from the previous assignment to format the data into a specified output.
 
 ## Design
-### cut and paste
+### String Methods
 
-Use cut() and paste() command from previous assignment to extract the data.
+The data will be extracted using for loops and open(). After extraction, each data set will be assigned to variables and incremented based on the FIPS. The output will be formatted using string methods.
 
 ## Implementation
 
